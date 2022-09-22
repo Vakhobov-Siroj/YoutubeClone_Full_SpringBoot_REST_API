@@ -1,0 +1,17 @@
+POST http://localhost:8080/comment_like/dislike
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2MDkzNDEsImV4cCI6MTY1NzgyNTM0MSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.645PQZFl3fWnzfLr8Q6A8z1PIRCJ74fO1_fgHhfgVn8
+
+{
+  "commentId": 1
+}
+
+###
+
+POST http://localhost:8080/comment_like/like
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2MDkzNDEsImV4cCI6MTY1NzgyNTM0MSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.645PQZFl3fWnzfLr8Q6A8z1PIRCJ74fO1_fgHhfgVn8
+
+{
+  "commentId": 1
+}

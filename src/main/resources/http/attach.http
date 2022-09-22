@@ -1,0 +1,28 @@
+POST http://localhost:8080/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="videoplayback.mp4"
+
+< C:\Users\vaxob\Desktop\rezyume.pdf
+
+###
+
+POST http://localhost:8080/attach/admUser/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjM4NjY3OTUsImV4cCI6MTY2NDA4Mjc5NSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiUk9MRV9VU0VSIn0.TgfIyC_k3wZFN69jHGLwbbD6HVk39dsbSTgsh-B8OcA
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="lanbargine.jpg"
+
+< C:\Users\vaxob\OneDrive\Desktop\rezyume.pdf
+
+###
+
+GET localhost:8080/attach/admUser/pagination?page=0&size=10
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2ODcxNDIsImV4cCI6MTY1NzkwMzE0MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.cU5c2eHiG28hvON3D7PFjccZI3-lShjDaquKxFm8aYI
+###
+GET localhost:8080/attach/all/open_general/c0f20d4d-2f49-414e-9648-0fceeb762b3b
+
+###
+DELETE http://localhost:8080/attach/admUser/delete/4028dfd181d2670f0181d269f3e20002

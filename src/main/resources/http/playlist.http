@@ -1,0 +1,70 @@
+POST localhost:8080/playlist/user/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzU0MTIsImV4cCI6MTY1ODE5MTQxMiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.ZFkXV97UynFf2mFC4fIueLcYZ4x4MCGXz79OnjZ0Rsc
+
+{
+  "name": "Kino",
+  "review": "4028dfd181d26c2a0181d26c7d4d0000",
+  "description": "Movies about detictive",
+  "channel": "8a8a83fb81f632e20181f6388f900000",
+  "status": "PUBLIC",
+  "orderNum": 1
+}
+
+###
+
+GET http://localhost:8080/playlist/ownUser/fullUpdate/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2ODcxNDIsImV4cCI6MTY1NzkwMzE0MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.cU5c2eHiG28hvON3D7PFjccZI3-lShjDaquKxFm8aYI
+
+###
+
+GET http://localhost:8080/playlist/admin/byId/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzI3NjAsImV4cCI6MTY1ODE4ODc2MCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo1LCJyb2xlIjoiUk9MRV9BRE1JTiJ9.i7QoDRWL1t4A_h1J04YqsuDhSYZL4WVY_QLEOd5iySU
+
+###
+
+GET http://localhost:8080/playlist/user/byId
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzU0MTIsImV4cCI6MTY1ODE5MTQxMiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.ZFkXV97UynFf2mFC4fIueLcYZ4x4MCGXz79OnjZ0Rsc
+
+###
+
+GET http://localhost:8080/playlist/public/channel/8a8a83fb81f632e20181f6388f900000
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzU0MTIsImV4cCI6MTY1ODE5MTQxMiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.ZFkXV97UynFf2mFC4fIueLcYZ4x4MCGXz79OnjZ0Rsc
+
+###
+
+GET http://localhost:8080/playlist/public/playlist/2
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzU0MTIsImV4cCI6MTY1ODE5MTQxMiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.ZFkXV97UynFf2mFC4fIueLcYZ4x4MCGXz79OnjZ0Rsc
+
+
+###
+
+PUT http://localhost:8080/playlist/ownUser/fullUpdate/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2ODcxNDIsImV4cCI6MTY1NzkwMzE0MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.cU5c2eHiG28hvON3D7PFjccZI3-lShjDaquKxFm8aYI
+
+{
+  "name": "Program",
+  "review": "4028dfd181d26c2a0181d26c7d4d0000",
+  "description": "Program language",
+  "channel": "402866d181f0e8fa0181f0eab1430000",
+  "status": "PUBLIC",
+  "orderNum": 1
+}
+
+
+###
+
+PUT http://localhost:8080/playlist/OU/changStatus/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2ODcxNDIsImV4cCI6MTY1NzkwMzE0MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.cU5c2eHiG28hvON3D7PFjccZI3-lShjDaquKxFm8aYI
+
+
+###
+
+DELETE http://localhost:8080/playlist/AOU/delete/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2ODcxNDIsImV4cCI6MTY1NzkwMzE0MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.cU5c2eHiG28hvON3D7PFjccZI3-lShjDaquKxFm8aYI
+
+###
+
+GET localhost:8080/playlist/admin/pagination?page=0&size=10

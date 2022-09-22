@@ -1,0 +1,96 @@
+POST localhost:8080/video/user/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjM4NjY3OTUsImV4cCI6MTY2NDA4Mjc5NSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiUk9MRV9VU0VSIn0.TgfIyC_k3wZFN69jHGLwbbD6HVk39dsbSTgsh-B8OcA
+
+{
+  "name": "Mp3 musics",
+  "attach": "4028dfd181d26c2a0181d26c7d4d0000",
+  "channel": "402866d181f0e8fa0181f0eab1430000",
+  "description": "Konsert xajviy",
+  "review": "4028dfd181d26c2a0181d26c7d4d0000",
+  "key": "Mp3 788musics",
+  "title": "xajviy kulgu",
+  "category": "MultFilm",
+  "type": "SHORT",
+  "status": "PUBLIC",
+   "tags": [
+      "sotsial",
+      "d2as"
+    ]
+}
+
+###
+
+GET http://localhost:8080/video/user/list
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMjU4MTgsImV4cCI6MTY1ODM0MTgxOCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.l91NoZ_zdYijsjbx_ho1b7w1-_L5VMyO87JqF7J-J4g
+
+###
+
+GET http://localhost:8080/video/public/byId/402866d181f0e8fa0181f0eab1430000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMjU4MTgsImV4cCI6MTY1ODM0MTgxOCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.l91NoZ_zdYijsjbx_ho1b7w1-_L5VMyO87JqF7J-J4g
+
+
+###
+
+PUT http://localhost:8080/video/ownUser/fullUpdate/konsertcha
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMjU4MTgsImV4cCI6MTY1ODM0MTgxOCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.l91NoZ_zdYijsjbx_ho1b7w1-_L5VMyO87JqF7J-J4g
+
+{
+  "name": "Tom and Jerry",
+  "attach" : "4028dfd181d26c2a0181d26c7d4d0000",
+  "channel" : "402866d181f0e8fa0181f0eab1430000",
+  "description": "Tom and Jerry about chesse",
+  "review": "4028dfd181d26c2a0181d26c7d4d0000",
+  "key" : "TomAndJerry",
+  "title": "catch the jeery",
+  "category": "MultFilm",
+  "type": "VIDEO"
+}
+
+###
+
+PUT http://localhost:8080/video/ownUser/changeVideoStatus/TomAndJerry
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMjU4MTgsImV4cCI6MTY1ODM0MTgxOCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.l91NoZ_zdYijsjbx_ho1b7w1-_L5VMyO87JqF7J-J4g
+
+
+###
+
+PUT http://localhost:8080/video/public/IncreaseVideoViewCountByKey/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMjU4MTgsImV4cCI6MTY1ODM0MTgxOCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.l91NoZ_zdYijsjbx_ho1b7w1-_L5VMyO87JqF7J-J4g
+
+{
+  "name": "Mp3"
+}
+
+###
+
+DELETE http://localhost:8080/video/adm/delete/9
+Authorization: Bearer
+
+###
+
+GET localhost:8080/video/public/pagination?categoryId=8&page=0&size=10
+
+###
+
+GET localhost:8080/video/public/search_text?search_text=Tom and jerry&page=0&size=10
+
+###
+
+GET localhost:8080/video/public/tagId?tagId=2&page=0&size=10
+
+###
+
+GET localhost:8080/video/adm/pagination?page=0&size=10
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMzAwMjIsImV4cCI6MTY1ODM0NjAyMiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo1LCJyb2xlIjoiUk9MRV9BRE1JTiJ9.Qwr1YwDgtAxZ386VfIWSyJXbW73Us-UAJjZGqNJ_V7Y
+
+###
+
+GET localhost:8080/video/adm/pagination?page=0&size=10
+
+###
+
+GET localhost:8080/video/public/search_channel?channleId=402866d181f0e8fa0181f0eab1430000&page=0&size=10

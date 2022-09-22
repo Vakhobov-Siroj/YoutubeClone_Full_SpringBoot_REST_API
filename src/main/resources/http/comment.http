@@ -1,0 +1,45 @@
+POST localhost:8080/comment/user/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjM4NjY3OTUsImV4cCI6MTY2NDA4Mjc5NSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiUk9MRV9VU0VSIn0.TgfIyC_k3wZFN69jHGLwbbD6HVk39dsbSTgsh-B8OcA
+
+{
+  "video": "402866d181f0fc820181f11373530001",
+  "content": "Kunlar Issiqroq"
+}
+
+###
+
+GET http://localhost:8080/comment/adm/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwNDE2MzgsImV4cCI6MTY1ODI1NzYzOCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.lZHULMfc_f2s788B8eZDjHT3EKl_cQmWPsTM9kMv1EY
+
+###
+
+GET http://localhost:8080/comment/adm/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwNDE2MzgsImV4cCI6MTY1ODI1NzYzOCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.lZHULMfc_f2s788B8eZDjHT3EKl_cQmWPsTM9kMv1EY
+
+###
+
+GET http://localhost:8080/comment/adm/8
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc3MDAzNzYsImV4cCI6MTY1NzkxNjM3NiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo1LCJyb2xlIjoiUk9MRV9BRE1JTiJ9.__FrTntRBtifcw0hyiqcOdOYJ9LhXD4rBU48yWZ-mPM
+
+
+###
+
+PUT http://localhost:8080/comment/user/update/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjM4NjY3OTUsImV4cCI6MTY2NDA4Mjc5NSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiUk9MRV9VU0VSIn0.TgfIyC_k3wZFN69jHGLwbbD6HVk39dsbSTgsh-B8OcA
+
+{
+  "video": "402866d181f0fc820181f11373530001",
+  "content": "Zo'r chiqibdi qoyil shunaqa videolar chiqaravering"
+}
+
+###
+
+DELETE http://localhost:8080/comment/user/delete/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwNDE2MzgsImV4cCI6MTY1ODI1NzYzOCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.lZHULMfc_f2s788B8eZDjHT3EKl_cQmWPsTM9kMv1EY
+
+###
+
+GET localhost:8080/comment/public/pagination?page=0&size=10
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc3MDAzNzYsImV4cCI6MTY1NzkxNjM3NiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo1LCJyb2xlIjoiUk9MRV9BRE1JTiJ9.__FrTntRBtifcw0hyiqcOdOYJ9LhXD4rBU48yWZ-mPM

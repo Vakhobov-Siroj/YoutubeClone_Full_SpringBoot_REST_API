@@ -1,0 +1,79 @@
+POST localhost:8080/channel/user/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2ODcxNDIsImV4cCI6MTY1NzkwMzE0MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.cU5c2eHiG28hvON3D7PFjccZI3-lShjDaquKxFm8aYI
+
+{
+  "name": "Dunyo olami",
+  "attach" : "4028dfd181d26c2a0181d26c7d4d0000",
+  "description": "Dunyo olami Videolar ",
+  "banner": "12",
+  "key" : "DunyoOlami",
+  "websiteUrl": "siteWeb",
+  "telefoneUrl": "siteTele",
+  "instagramUrl": "siteInsta"
+}
+
+###
+
+GET http://localhost:8080/channel/user/list
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2ODcxNDIsImV4cCI6MTY1NzkwMzE0MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.cU5c2eHiG28hvON3D7PFjccZI3-lShjDaquKxFm8aYI
+
+###
+
+GET http://localhost:8080/channel/public/byId/402866d181f0e8fa0181f0eab1430000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2ODcxNDIsImV4cCI6MTY1NzkwMzE0MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.cU5c2eHiG28hvON3D7PFjccZI3-lShjDaquKxFm8aYI
+
+
+###
+
+PUT http://localhost:8080/channel/ownUser/fullUpdate/DunyoOlami
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2ODcxNDIsImV4cCI6MTY1NzkwMzE0MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.cU5c2eHiG28hvON3D7PFjccZI3-lShjDaquKxFm8aYI
+
+{
+  "name": "Java point",
+  "attach" : "4028dfd181d26c2a0181d26c7d4d0000",
+  "description": "Java point videos ",
+  "banner": "12",
+  "key" : "JavaPoint",
+  "websiteUrl": "siteWeb",
+  "telefoneUrl": "siteTele",
+  "instagramUrl": "siteInsta"
+}
+
+###
+
+PUT http://localhost:8080/channel/ownUser/attachUpdate/JavaPoint
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2ODcxNDIsImV4cCI6MTY1NzkwMzE0MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.cU5c2eHiG28hvON3D7PFjccZI3-lShjDaquKxFm8aYI
+
+{
+  "attach" : "8a8a83fb81f64e6b0181f64eb1a80000"
+}
+
+###
+
+PUT http://localhost:8080/channel/ownUser/bannerUpdate/JavaPoint
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2ODcxNDIsImV4cCI6MTY1NzkwMzE0MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.cU5c2eHiG28hvON3D7PFjccZI3-lShjDaquKxFm8aYI
+
+{
+  "banner" : "8a8a83fb81f64e6b0181f64eb1a80000"
+}
+
+
+###
+
+PUT http://localhost:8080/channel/AOU/changStatus/JavaPoint
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2ODcxNDIsImV4cCI6MTY1NzkwMzE0MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.cU5c2eHiG28hvON3D7PFjccZI3-lShjDaquKxFm8aYI
+
+###
+
+DELETE http://localhost:8080/channel/adm/delete/9
+Authorization: Bearer
+
+###
+
+GET localhost:8080/channel/admin/pagination?page=0&size=10
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc3MDAzNzYsImV4cCI6MTY1NzkxNjM3NiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo1LCJyb2xlIjoiUk9MRV9BRE1JTiJ9.__FrTntRBtifcw0hyiqcOdOYJ9LhXD4rBU48yWZ-mPM

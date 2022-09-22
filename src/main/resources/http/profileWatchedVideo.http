@@ -1,0 +1,9 @@
+###
+POST http://localhost:8080/video_watch/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwMzQ4MjYsImV4cCI6MTY1ODI1MDgyNiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo1LCJyb2xlIjoiUk9MRV9BRE1JTiJ9.5yh7rq4ozL8yxPhiEcdzFj3oMp0hAhxW692SHC87HBM
+
+{
+  "videoId": "8a8a83fb81f5facd0181f5fd6e1c0000",
+  "status": "LIKE"
+}

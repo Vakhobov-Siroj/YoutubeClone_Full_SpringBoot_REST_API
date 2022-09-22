@@ -1,0 +1,38 @@
+###
+
+GET localhost:8080/playlistVideo/pagination?page=0&size=10
+
+
+###
+POST localhost:8080/playlistVideo/userOwn/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwNDE2MzgsImV4cCI6MTY1ODI1NzYzOCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.lZHULMfc_f2s788B8eZDjHT3EKl_cQmWPsTM9kMv1EY
+
+{
+  "playlist": 2,
+  "video": "8a8a83fb81f5facd0181f5fd6e1c0000",
+  "orderNum": 1
+}
+
+###
+
+GET http://localhost:8080/playlistVideo/adm/list
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2MDQyNjgsImV4cCI6MTY1NzgyMDI2OCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo1LCJyb2xlIjoiUk9MRV9BRE1JTiJ9.qeaQiE0s_5_l_WEuF17BIDfR3jX1TH0FKnPbazdHOAM
+
+
+###
+
+PUT http://localhost:8080/playlistVideo/userOwn/update/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwNDE2MzgsImV4cCI6MTY1ODI1NzYzOCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.lZHULMfc_f2s788B8eZDjHT3EKl_cQmWPsTM9kMv1EY
+
+{
+  "playlist": 3,
+  "video": "8a8a83fb81f607a50181f6083e3c0000",
+  "orderNum": 2
+}
+
+###
+
+DELETE http://localhost:8080/playlistVideo/userOwn/delete/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwNDE2MzgsImV4cCI6MTY1ODI1NzYzOCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.lZHULMfc_f2s788B8eZDjHT3EKl_cQmWPsTM9kMv1EY

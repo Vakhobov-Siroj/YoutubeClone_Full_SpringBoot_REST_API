@@ -1,0 +1,57 @@
+###
+POST localhost:8080/subscription/user/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMTkzNDQsImV4cCI6MTY1ODMzNTM0NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.PDy1r7dlYlPqsxtrsV2eb6uKBX_uA9BkhxG9dj3c2vE
+
+{
+  "channel": "8a8a83fb81f632e20181f6388f900000",
+  "typeStatus" : "ALL"
+}
+
+###
+
+GET http://localhost:8080/subscription/public/subscription
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMTkzNDQsImV4cCI6MTY1ODMzNTM0NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.PDy1r7dlYlPqsxtrsV2eb6uKBX_uA9BkhxG9dj3c2vE
+
+###
+
+GET http://localhost:8080/subscription/adm/8
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMjExMzMsImV4cCI6MTY1ODMzNzEzMywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo1LCJyb2xlIjoiUk9MRV9BRE1JTiJ9.w9jwhOHjKedIBgj62hB_-j56L_W1dx2yQgvWXlctcgs
+
+
+###
+
+PUT http://localhost:8080/subscription/user/changeStatus/8a8a83fb81f632e20181f6388f900000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMTkzNDQsImV4cCI6MTY1ODMzNTM0NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.PDy1r7dlYlPqsxtrsV2eb6uKBX_uA9BkhxG9dj3c2vE
+
+{
+  "status": "ACTIVE"
+}
+
+###
+
+PUT http://localhost:8080/subscription/user/changeNotification/8a8a83fb81f632e20181f6388f900000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMTkzNDQsImV4cCI6MTY1ODMzNTM0NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.PDy1r7dlYlPqsxtrsV2eb6uKBX_uA9BkhxG9dj3c2vE
+
+{
+  "typeStatus" : "NON"
+}
+
+###
+
+PUT http://localhost:8080/subscription/ownUser/bannerUpdate/JavaPoint
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMTkzNDQsImV4cCI6MTY1ODMzNTM0NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.PDy1r7dlYlPqsxtrsV2eb6uKBX_uA9BkhxG9dj3c2vE
+
+{
+  "banner" : "8a8a83fb81f64e6b0181f64eb1a80000"
+}
+
+
+###
+
+PUT http://localhost:8080/subscription/AOU/changStatus/JavaPoint
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMTkzNDQsImV4cCI6MTY1ODMzNTM0NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo4LCJyb2xlIjoiUk9MRV9VU0VSIn0.PDy1r7dlYlPqsxtrsV2eb6uKBX_uA9BkhxG9dj3c2vE

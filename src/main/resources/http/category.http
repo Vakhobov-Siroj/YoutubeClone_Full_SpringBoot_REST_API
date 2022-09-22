@@ -1,0 +1,28 @@
+POST localhost:8080/category/adm/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcwODQ4OTIsImV4cCI6MTY1NzMwMDg5MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo1LCJyb2xlIjoiUk9MRV9BRE1JTiJ9.BcNzBwb9Sr2WYEoTwGz9PkBJlGskKeDPPbS5uAsFBsk
+
+{
+  "name": "Musiqa"
+}
+
+###
+
+GET http://localhost:8080/category/adm/list
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcwODQ4OTIsImV4cCI6MTY1NzMwMDg5MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo1LCJyb2xlIjoiUk9MRV9BRE1JTiJ9.BcNzBwb9Sr2WYEoTwGz9PkBJlGskKeDPPbS5uAsFBsk
+
+
+###
+
+PUT http://localhost:8080/category/adm/update/Musiqa
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcwODQ4OTIsImV4cCI6MTY1NzMwMDg5MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo1LCJyb2xlIjoiUk9MRV9BRE1JTiJ9.BcNzBwb9Sr2WYEoTwGz9PkBJlGskKeDPPbS5uAsFBsk
+
+{
+  "name": "Mp3"
+}
+
+###
+
+DELETE http://localhost:8080/category/adm/delete/9
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcwODQ4OTIsImV4cCI6MTY1NzMwMDg5MiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo1LCJyb2xlIjoiUk9MRV9BRE1JTiJ9.BcNzBwb9Sr2WYEoTwGz9PkBJlGskKeDPPbS5uAsFBsk
