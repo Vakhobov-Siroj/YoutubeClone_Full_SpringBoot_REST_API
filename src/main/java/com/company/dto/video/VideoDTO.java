@@ -13,6 +13,7 @@ import java.util.List;
 
 @Data
 public class VideoDTO {
+
     private String uuid;
 
     private String name;
